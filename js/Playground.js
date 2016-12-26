@@ -1,12 +1,11 @@
-
+//@flow
 import React, {Component} from 'react';
 import {View} from 'react-native';
 import Header from './common/JQHeader.js';
 
 class Playground extends React.Component{
-
-    constructor(props:any) {
-        super(props);
+    constructor() {
+        super();
         const content = [];
         const define = (name, render) => {
             content.push(<Example key={name} render={render}/>);

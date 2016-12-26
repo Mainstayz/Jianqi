@@ -1,3 +1,5 @@
+//@flow
+
 'use strict';
 
 import * as types from '../constants/actiontypes.js';
