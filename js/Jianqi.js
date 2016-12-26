@@ -11,12 +11,15 @@ import {
   View,
 } from 'react-native';
 
-import StyleSheet from './common/StyleSheets.js';
+import StyleSheet from './common/JQStyleSheet.js';
+import JQHeader from './common/JQHeader.js';
 
 export default class Jianqi extends Component {
   render() {
     return (
+
       <View style={styles.container}>
+
         <Text style={styles.welcome}>
           Welcome to React Native! hahhaa
         </Text>

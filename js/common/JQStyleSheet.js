@@ -12,7 +12,6 @@ function create(styles){
         if(ios && Platform.OS === 'android'){
             style = {...style, ...android};
         }
-        console.log(style);
         platformStyle[name] = style;
     });
     return StyleSheet.create(platformStyle);
