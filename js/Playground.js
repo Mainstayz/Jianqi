@@ -3,13 +3,18 @@ import React, {Component} from 'react';
 import {View} from 'react-native';
 import Header from './common/JQHeader.js';
 
-class Playground extends React.Component{
+// $FlowFixMe
+class Playground extends React.Component {
+    state : {
+        content?: Array < any >;
+    };
     constructor() {
         super();
         const content = [];
         const define = (name, render) => {
             content.push(<Example key={name} render={render}/>);
         };
+        // $FlowFixMe
         Header.__cards__(define);
         this.state = {
             content

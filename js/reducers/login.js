@@ -1,19 +1,15 @@
-//@flow
-
-'use strict';
-
 import * as types from '../constants/actiontypes.js';
 
 const initialState = {
     isLoggedIn: false,
     user: {},
-    status: null,
+    status: null
 }
 
-export default function login(state=initialState,action){
+export default function login(state = initialState, action) {
     switch (action.type) {
         case types.LOGGED_DOING:
-            return{
+            return {
                 ...state,
                 status: 'doing'
             };
@@ -25,21 +21,21 @@ export default function login(state=initialState,action){
                 status: 'done'
             };
         case types.LOGGED_OUT:
-			return {
-				...state,
-				isLoggedIn: false,
-				user: {},
-				status: null
-			};
-		case types.LOGGED_ERROR:
-			return {
-				...state,
-				isLoggedIn: false,
-				user: {},
-				status: null
-			}
+            return {
+                ...state,
+                isLoggedIn: false,
+                user: {},
+                status: null
+            };
+        case types.LOGGED_ERROR:
+            return {
+                ...state,
+                isLoggedIn: false,
+                user: {},
+                status: null
+            }
 
-		default: 
-			return state;
+        default:
+            return state;
     }
 }

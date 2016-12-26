@@ -1,5 +1,4 @@
 // @flow
-
 'use strict';
 import JQColor from './JQColor.js';
 import JQStyleSheet from './JQStyleSheet.js';
