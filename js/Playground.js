@@ -2,9 +2,10 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
 import Header from './common/JQHeader.js';
+import PageControl from './common/JQPageControl';
 
-// $FlowFixMe
-class Playground extends React.Component {
+
+class Playground extends Component {
     state : {
         content?: Array < any >;
     };
@@ -15,7 +16,7 @@ class Playground extends React.Component {
             content.push(<Example key={name} render={render}/>);
         };
         // $FlowFixMe
-        Header.__cards__(define);
+        PageControl.__cards__(define);
         this.state = {
             content
         };
