@@ -21,15 +21,15 @@ export type Props = {
   title?: string;
   leftItem?: Item;
   rightItem?: Item;
-  extraItems?: Array<Item>;
+  extraItems?: Array < Item >;
   foreground?: Foreground;
   style?: any;
   children?: any;
 };
 
 class JQHeaderIOS extends Component {
-  static height:number;
-  props: Props;
+  static height : number;
+  props : Props;
 
   render() {
     const {leftItem, title, rightItem, foreground} = this.props;
@@ -78,11 +78,10 @@ class JQHeaderIOS extends Component {
 
 class ItemWarpperIOS extends Component {
 
-  props: {
+  props : {
     item: Item;
     color: string;
   };
- 
 
   render() {
     const {item, color} = this.props;
@@ -241,6 +240,8 @@ Header.__cards__ = (define) => {
     backgroundColor: 'white'
   }}
     foreground="dark"/>));
+
+  
 };
 
 export default Header;
